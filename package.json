@@ -1,7 +1,7 @@
 {
   "name": "ajs_ca1_1-0",
   "version": "1.0.0",
-  "description": "Database setup connection",
+  "description": "Vercel ProjectID prj_FPFjp2IJUY5dg4AGzqGLR0uhduyD",
   "main": "sever.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
