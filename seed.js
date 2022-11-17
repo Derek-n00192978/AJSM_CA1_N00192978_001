@@ -1,7 +1,7 @@
 /* mySeedScript.js */
 
 // require the necessary libraries
-const faker = require("faker");
+const faker = require("@faker-js/faker");
 const MongoClient = require("mongodb").MongoClient;
 
 function randomIntFromInterval(min, max) { // min and max included 
@@ -10,7 +10,8 @@ function randomIntFromInterval(min, max) { // min and max included
 
 async function seedDB() {
     // Connection URL
-    const url = 'mongodb://admin:root@localhost:$3000/AJS_CA1_N00192978_001?authSource=admin';
+    const uri = 'mongodb+srv://admin:root@cluster0.sd2kb8x.mongodb.net/AJS_CA1_N00192978_001?retryWrites=true&w=majority'
+    //const uri = 'mongodb://admin:root@localhost:$27017/AJS_CA1_N00192978_001?authSource=admin';
 
     const client = new MongoClient(uri, {
         useNewUrlParser: true,
@@ -31,7 +32,7 @@ async function seedDB() {
         let timeSeriesData = [];
 
         for (let i = 0; i < 5000; i++) {
-            const name = faker.name.name();
+            const name = faker.company.name();
             const location = faker.address.city();
             const phone = faker.phone.number();
            

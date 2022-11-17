@@ -1,5 +1,5 @@
 {
-  "name": "AJS_CA1_N00192978_001",
+  "name": "ajs_ca1_1-0",
   "version": "1.0.0",
   "description": "Database setup connection",
   "main": "sever.js",
@@ -11,10 +11,17 @@
   "author": "Derek Reid",
   "license": "ISC",
   "dependencies": {
+    "build": "^0.1.4",
     "express": "^4.18.2",
     "faker": "^6.6.6",
     "mongo": "^0.1.0",
     "mongodb": "^4.10.0",
-    "nodemon": "^2.0.20"
+    "nodemon": "^2.0.20",
+    "vercel": "^28.5.3"
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^7.6.0"
   }
 }
+//prj_FPFjp2IJUY5dg4AGzqGLR0uhduyD
+//vercel Project ID
